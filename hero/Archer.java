@@ -3,6 +3,7 @@ package com.itacademy.lesson7.hero;
 public class Archer extends Hero {
 
     public Archer(String name, int health) {
+
         super(name, 10, health);
     }
 

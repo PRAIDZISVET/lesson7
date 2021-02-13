@@ -5,6 +5,7 @@ public class Zombie extends Enemy {
     private boolean diedOnce;
 
     public Zombie(String name, int health, int damage) {
+
         super(name, health, damage);
     }
 
