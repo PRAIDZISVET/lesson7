@@ -1,6 +1,10 @@
 package com.itacademy.lesson7.hero;
 
-public class Archer extends Hero {
+import com.itacademy.lesson7.hero.weapon.RangeWeapon;
+import com.itacademy.lesson7.hero.weapon.Weapon;
+
+public class Archer<X extends RangeWeapon> extends Hero<X> {
+
 
     public Archer(String name, int health) {
 
@@ -12,4 +16,5 @@ public class Archer extends Hero {
         System.out.printf("%s пускает стрелу в %s\n", getName(), enemy.getName());
         applyDamage(enemy);
     }
+
 }

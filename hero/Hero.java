@@ -1,10 +1,13 @@
 package com.itacademy.lesson7.hero;
 
-public abstract class Hero implements Mortal {
+import com.itacademy.lesson7.hero.weapon.Weapon;
+
+public abstract class Hero <T extends Weapon> implements Mortal {
 
     private String name;
     private int damage;
     private int health;
+    private T weapon;
 
     public Hero(String name, int damage, int health) {
         this.name = name;
@@ -49,5 +52,13 @@ public abstract class Hero implements Mortal {
 
     public void setHealth(int health) {
         this.health = health;
+    }
+
+    public T getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(T weapon) {
+        this.weapon = weapon;
     }
 }

@@ -1,6 +1,8 @@
 package com.itacademy.lesson7.hero;
 
-public class Warrior extends Hero {
+import com.itacademy.lesson7.hero.weapon.MeleeWeapon;
+
+public class Warrior<X extends MeleeWeapon> extends Hero<X> {
 
     public Warrior(String name, int health) {
         super(name, 15, health);
