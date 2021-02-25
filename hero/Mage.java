@@ -14,6 +14,13 @@ public class Mage extends Hero {
         System.out.printf(gender.getDescription() + "%s колдует заклинания над %s\n", getName(), enemy.getName());
         applyDamage(enemy);
     }
+
+    @Override
+    public String toString() {
+        return "Mage{" +
+                "gender=" + gender +
+                "}" + super.toString();
+    }
 }
 
 

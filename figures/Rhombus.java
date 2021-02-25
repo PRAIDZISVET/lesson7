@@ -4,10 +4,11 @@ public class Rhombus extends Parallelogram implements EqualSides {
 
     private float diagonal2;
 
-    public Rhombus(int x, int y, float width, float hight, boolean angle90, float diagonal, float diagonal2) {
-        super(x, y, width, hight, angle90, diagonal);
+    public Rhombus(int x, int y, float width, float hight, float diagonal, float diagonal2) {
+        super(x, y, width, hight, diagonal);
         this.diagonal2 = diagonal2;
     }
+
     @Override
     public String toString () {
         return "Rhombus";

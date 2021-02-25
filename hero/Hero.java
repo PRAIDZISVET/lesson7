@@ -61,4 +61,14 @@ public abstract class Hero <T extends Weapon> implements Mortal {
     public void setWeapon(T weapon) {
         this.weapon = weapon;
     }
+
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "name='" + name + '\'' +
+                ", damage=" + damage +
+                ", health=" + health +
+                ", weapon=" + weapon +
+                '}';
+    }
 }
